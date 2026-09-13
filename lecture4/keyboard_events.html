@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-size: 500%;
+            background-position: -1500px -500px ;
+            background-color: rgb(164, 109, 89);
+        }
+        #form{
+            width:300px;
+            margin:100px ;
+            border:2px solid red;
+            margin-left: 500px;
+            border-radius:15px;
+            padding:45px;
+            background-color: rgb(60, 166, 201);
+            color:blue;
+        }
+        p,input{
+            font-size:20px;
+        }
+        input{
+            width:300px;
+            border:10px solid blueviolet;
+            border-radius:10px ;
+            background-color:rgb(226, 226, 177);
+            box-shadow:inset -3px 3px 10px brown;
+        }
+        #h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id ="form">
+            <h1 id ="h1">KEYBOARD  EVENTS</h1>
+            <br><br><br>
+            <p>onkeydown</p>
+            <input type="text" onkeydown=" document.getElementById('form').style.background=this.value"> 
+            <p>onkeyup</p>
+            <input type="text" onkeyup="document.getElementById('form').style.background=this.value">
+            <p>onkeypress</p>
+            <input type="text" onkeypress="document.getElementById('form').style.background=this.value">
+
+        </div>
+        
+</body>
+</html>
